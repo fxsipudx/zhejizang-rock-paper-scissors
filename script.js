@@ -3,6 +3,7 @@ const paperButton = document.getElementById('paper');
 const scissorButton = document.getElementById('scissors');
 const playerScore = document.getElementById('playerScore');
 const computerScore = document.getElementById('computerScore');
+const gameState = document.getElementById('gameState');
 
 rockButton.addEventListener('click',() => playGame(rock));
 paperButton.addEventListener('click',() => playGame(paper));
@@ -39,8 +40,12 @@ function playGame(playerChoice){
     }
     if(playerChoice.prev === computerChoice){
         finalPlayerScore++;
+        gameState.textContent = "Player wins this round";
     }else if(playerChoice.next === computerChoice){
         finalComputerScore++;
+        gameState.textContent = "Chars bot wins this round";
+    }else{
+        gameState.textContent = "It's a tie";
     }
     updateScoreUI();
 }
