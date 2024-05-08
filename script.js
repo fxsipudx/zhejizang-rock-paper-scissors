@@ -4,6 +4,7 @@ const scissorButton = document.getElementById('scissors');
 const resetButton = document.getElementById('reset');
 const playerScore = document.getElementById('playerScore');
 const computerScore = document.getElementById('computerScore');
+const finalGameRound = document.getElementById('gameRound');
 const gameState = document.getElementById('gameState');
 
 
@@ -67,10 +68,12 @@ function updateComputerChoice(){
 function updateScoreUI(){
     playerScore.textContent = finalPlayerScore;
     computerScore.textContent = finalComputerScore;
+    finalGameRound.textContent = gameRound;
 }
 function resetGame(){
     finalPlayerScore = 0;
     finalComputerScore = 0;
+    gameRound = 0;
     computerChoice = paper;
     updateScoreUI();
     gameState.textContent ='Game has been reset';
