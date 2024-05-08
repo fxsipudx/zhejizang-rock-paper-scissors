@@ -1,13 +1,16 @@
 const rockButton = document.getElementById('rock');
 const paperButton = document.getElementById('paper');
 const scissorButton = document.getElementById('scissors');
+const resetButton = document.getElementById('reset');
 const playerScore = document.getElementById('playerScore');
 const computerScore = document.getElementById('computerScore');
 const gameState = document.getElementById('gameState');
 
+
 rockButton.addEventListener('click',() => playGame(rock));
 paperButton.addEventListener('click',() => playGame(paper));
 scissorButton.addEventListener('click',() => playGame(scissors));
+resetButton.addEventListener('click',() => resetGame());
 
 // This is a doublylinked list with Rock <-> Paper <-> Scissors
 class choiceNode{
@@ -64,4 +67,11 @@ function updateComputerChoice(){
 function updateScoreUI(){
     playerScore.textContent = finalPlayerScore;
     computerScore.textContent = finalComputerScore;
+}
+function resetGame(){
+    finalPlayerScore = 0;
+    finalComputerScore = 0;
+    computerChoice = paper;
+    updateScoreUI();
+    gameState.textContent ='Game has been reset';
 }
