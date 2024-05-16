@@ -18,6 +18,8 @@ button{
     border: none;
     margin: 50px 10px;
     font-family:"Press Start 2P";
+    text-shadow: 1px 1px 0px #ff0000, 2px 2px 0px #0000ff;
+    box-shadow: 2px 2px 0px #ffffff, 4px 4px 0px #000000;
 }
 #rock{
     background-color: #FF0000;
