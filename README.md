@@ -1,5 +1,5 @@
 # Rock-Paper-Scissors
-
+![Rock-Paper-Scissors photo](project-image.jpeg)
 ## Description
 
 This project is an implementation of the classic game Rock-Paper-Scissors (RPS). Inspired by the research paper "Social cycling and conditional responses in the Rock-Paper-Scissors game" by Zhijian Wang, Bin Xu, and Hai-Jun Zhou, this project explores decision-making strategies and patterns observed in human behavior during the game.
@@ -9,6 +9,10 @@ This project is an implementation of the classic game Rock-Paper-Scissors (RPS).
 - Interactive web-based RPS game.
 - Keeps track of player and computer scores.
 - Implements game logic based on conditional responses as outlined in the referenced paper.
+
+## Try it Out
+
+You can try the game live on GitHub Pages: [Rock-Paper-Scissors Game](https://fxsipudx.github.io/zhejizang-rock-paper-scissors-game/)  
 
 ## Installation
 
